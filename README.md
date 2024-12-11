@@ -16,4 +16,4 @@ Orbina é um projeto de finanças pessoais desenvolvido utilizando HTML, CSS e B
 ## Como Usar
 1. Clone este repositório.
    ```sh
-   git clone https://github.com/masooanjos/Projeto---Fintech/
+   git clone https://github.com/masooanjos/Orbita-Projeto_Fintech
