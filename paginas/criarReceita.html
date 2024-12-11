@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/styleReceita.css">
+<title>Orbita</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <header class="container-fluid px-0">
+        <nav class="d-flex justify-content-between align-items-center">
+          <a href="home.html" class="btn btn-link d-flex align-items-center " aria-label="Voltar">
+            <img src="../imagens/seta-esquerda.svg" alt="Voltar">
+          </a>
+          <a href="#" class="btn btn-link position-relative" aria-label="Notificações">
+            <img src="../imagens/notificacao.svg" alt="Voltar">
+          </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h1 class="formulario__titulo">Nova receita</h1>
+            <form class="formulario__form">
+    
+                <div class="formulario__grupo d-flex justify-content-between align-items-center">
+                    <div>
+                        <label class="formulario__rotulo">Valor da receita</label>
+                        <p class="formulario__valor">R$0,00</p>
+                    </div>
+                    <button type="button" class="formulario__botao-icone">
+                        <img src="../imagens/coracao.svg" alt="Favoritar" class="formulario__icone">
+                    </button>
+                </div>
+    
+                <div class="formulario__grupo d-flex align-items-center justify-content-start gap-3">
+                    <img src="../imagens/calendario.svg" alt="Calendário" class="formulario__icone">
+                    <button type="button" class="botao botao--arredondado botao--pequeno">Hoje</button>
+                    <button type="button" class="botao botao--arredondado botao--pequeno">Ontem</button>
+                    <button type="button" class="botao botao--arredondado botao--pequeno">Outros</button>
+                </div>
+    
+                <div class="formulario__grupo">
+                    <label for="categoria" class="formulario__rotulo mb-2 mt-3">Categoria</label>
+                    <select id="categoria" class="formulario__select w-100">
+                        <option value="investimento">Investimento</option>
+                        <option value="salario">Salário</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+    
+                <div class="formulario__grupo">
+                    <label for="descricao" class="formulario__rotulo mb-2 mt-3">Descrição</label>
+                    <textarea id="descricao" class="formulario__descricao" rows="3" placeholder="Faça uma breve descrição sobre essa receita"></textarea>
+                </div>
+    
+                <div class="formulario__grupo d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="../imagens/fixado.svg" alt="Pin" class="formulario__icone me-2">
+                        <span class="formulario__texto">Fixar</span>
+                    </div>
+                    <div class="formulario__grupo-interruptor form-check form-switch">
+                        <input class="form-check-input formulario__grupo-input me-3" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    </div>                
+                </div>
+    
+                <div class="formulario__grupo d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="../imagens/tag.svg" alt="Tag" class="formulario__icone formulario__icone--pequeno me-2">
+                        <span class="formulario__texto">Tags</span>
+                    </div>
+                    <button type="button" class="formulario__botao-icone">
+                        <img src="../imagens/seta-direita.svg" alt="Seta" class="formulario__icone formulario__icone--pequeno">
+                    </button>
+                </div>
+    
+                <button type="submit" class="botao botao--grande botao--azul">Salvar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-light border-top fixed-bottom mt-5">
+        <div class="d-flex justify-content-around py-1">
+            <a href="home.html" class="btn d-flex flex-column align-items-center">
+                <img src="../imagens/home.svg" alt="Home" width="24">
+            </a>
+            <a href="criarReceita.html" class="btn nova-receita d-flex flex-column align-items-center icone-nova">
+                <img src="../imagens/nova.svg" alt="Adicionar Receita">
+            </a>
+            <a href="relatorios.html" class="btn d-flex flex-column align-items-center">
+                <img src="../imagens/relatorio.svg" alt="Relatórios" width="24">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbita - Home</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styleHome.css">
+</head>
+<body>
+    <header class="container-fluid px-3 py-2">
+        <nav class="d-flex justify-content-between align-items-center">
+            <a href="../index.html" class="btn btn-link d-flex align-items-center" aria-label="Voltar">
+                <img src="../imagens/foto-perfil.svg" alt="Foto de perfil" width="40">
+            </a>
+            <a href="#" class="btn btn-link position-relative" aria-label="Notificações">
+                <img src="../imagens/notificacao-clara.svg" alt="Notificações" width="35">
+            </a>
+        </nav>
+    </header>
+
+    <main class="container container-grafico">
+        <div class="saldo">
+            <div>
+                <h5 class="mb-0 text-muted">Saldo atual</h5>
+                <h2 class="fw-bold text-dark">R$ 10.000,00</h2>
+            </div>
+            <button class="btn btn-outline-secondary">
+                <img src="../imagens/visualizacao.svg" alt="Ícone de Olho" width="30">
+            </button>
+        </div>
+
+        <div class="info-financeira">
+            <div class="info-financeira__item">
+                <div class="d-flex align-items-center">
+                    <img class="icone" src="../imagens/receita.svg" alt="Seta para cima" width="30">
+                    <span>Receita</span>
+                </div>
+                <h5 class="fw-bold mt-2">R$ 15.000,00</h5>
+            </div>
+
+            <div class="info-financeira__item info-financeira__item--direita">
+                <div class="d-flex align-items-center justify-content-end">
+                    <img class="icone" src="../imagens/despesa.svg" alt="Seta para baixo" width="30">
+                    <span>Despesa</span>
+                </div>
+                <h5 class="fw-bold mt-2">R$ 5.000,00</h5>
+            </div>
+        </div>
+
+        <div class="mt-4 transacoes-recentes">
+            <h5 class="mb-3 text-dark">Transações Recentes</h5>
+            <ul class="list-group shadow-sm">
+                <li class="list-group-item d-flex justify-content-between align-items-center transacao-item">
+                    <div class="d-flex align-items-center">
+                        <img src="../imagens/mercado.svg" alt="Compra Mercado" class="icone-transacao">
+                        <span class="ms-2 tamanho-sm">Compra mercado</span>
+                    </div>
+                    <span class="text-danger tamanho-sm">- R$ 200,00</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center transacao-item bg-light">
+                    <div class="d-flex align-items-center">
+                        <img src="../imagens/salario.svg" alt="Salário" class="icone-transacao">
+                        <span class="ms-2 tamanho-sm">Salário</span>
+                    </div>
+                    <span class="text-success tamanho-sm">+ R$ 5.000,00</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center transacao-item">
+                    <div class="d-flex align-items-center">
+                        <img src="../imagens/aluguel-de-casa.png" alt="Aluguel" class="icone-transacao">
+                        <span class="ms-2 tamanho-sm">Aluguel</span>
+                    </div>
+                    <span class="text-danger tamanho-sm">- R$ 1.500,00</span>
+                </li>
+            </ul>
+        </div>        
+
+        <div class="container mt-5">
+            <h5 class="text-center">Receita vs Gasto</h5>
+            <div class="d-flex justify-content-center">
+                <div class="grafico-pizza">
+                    <div class="fatia fatia-receita"></div>
+                    <div class="fatia fatia-gasto"></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+                <div>
+                    <span class="dot dot-receita"></span> Receita
+                </div>
+                <div>
+                    <span class="dot dot-gasto"></span> Gasto
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light border-top fixed-bottom mt-5">
+        <div class="d-flex justify-content-around py-1">
+            <a href="home.html" class="btn d-flex flex-column align-items-center">
+                <img src="../imagens/home.svg" alt="Home" width="24">
+            </a>
+            <a href="criarReceita.html" class="btn nova-receita d-flex flex-column align-items-center icone-nova">
+                <img src="../imagens/nova.svg" alt="Adicionar Receita">
+            </a>
+            <a href="relatorios.html" class="btn d-flex flex-column align-items-center">
+                <img src="../imagens/relatorio.svg" alt="Relatórios" width="24">
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
